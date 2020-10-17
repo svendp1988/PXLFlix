@@ -25,9 +25,10 @@ export function BrowseContainer({ slides }) {
                         ? (<Loading src={user.photoURL} />)
                         : (<Loading.ReleaseBody />)
                 }
-                <Header src="joker1">
+                <Header src="joker1" dontShowOnSmallViewPort>
                     <Header.Frame>
                         <Header.Logo to={ROUTES.HOME} src={logo} alt="PXL Flix" />
+
                     </Header.Frame>
                     <Header.Feature>
                         <Header.FeatureCallOut>Watch Joker Now</Header.FeatureCallOut>

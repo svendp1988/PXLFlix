@@ -1,6 +1,7 @@
 import React from 'react'
 import {
     Text,
+    Link,
     Feature,
     FeatureCallOut,
     Background,
@@ -20,6 +21,10 @@ Header.Feature = function HeaderFeature({ children, ...restProps }) {
 
 Header.Text = function HeaderText({ children, ...restProps }) {
     return <Text {...restProps}>{children}</Text>;
+};
+
+Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
+    return <Link{...restProps}>{children}</Link>;
 };
 
 Header.FeatureCallOut = function HeaderFeatureCallOut({ children, ...restProps }) {
